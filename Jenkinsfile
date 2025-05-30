@@ -51,10 +51,10 @@ node {
     jenkins_sonarqube_token_creds_id: "sonar-token",
     // Build Dockerfile
     perform_build_dockerfile: true,
-    image_name: "ecom-notification-consumer-service",
+    image_name: "java-service",
     dockerfile_location: "Dockerfile",
     dockerfile_context: "",
-    codeartifact_dependency: true,
+    codeartifact_dependency: false,
     codeartifact_domain: "ecomexpress",
     codeartifact_owner: "543339517346",
     // Image scaning
@@ -87,7 +87,7 @@ node {
     image_tag_build_param: "image_tag",
     enable_jira_build_param: "enable_jira",
     jira_ticket_id_build_param: "jira_ticket_id",
-    trigger_cd_pipeline_path: "CD/Test/Lastmile/ecom-notification-consumer-service/ecom-notification-consumer-service_CD_Pipeline",
+    trigger_cd_pipeline_path: "",
     // Notification
     notification_enabled: false,
     notification_channel: "teams",
