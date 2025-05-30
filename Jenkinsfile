@@ -4,7 +4,7 @@ node {
   cipipeline.call([
   enable_jenkins_build_param_override: true,
     // WORKSPACE MANAGEMENT
-    clean_workspace: true,
+    clean_workspace: false,
     ignore_clean_workspace_failure: false,
     delete_dirs: false,
     clean_when_build_aborted: true,
