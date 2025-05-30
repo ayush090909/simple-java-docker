@@ -5,7 +5,7 @@ node {
   enable_jenkins_build_param_override: true,
     // WORKSPACE MANAGEMENT
     clean_workspace: false,
-    ignore_clean_workspace_failure: false,
+    ignore_clean_workspace_failure: true,
     delete_dirs: false,
     clean_when_build_aborted: true,
     clean_when_build_failed: true,
