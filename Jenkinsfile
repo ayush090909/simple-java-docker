@@ -17,7 +17,7 @@ node {
     repo_ssh_url: "https://github.com/ayush090909/simple-java-docker.gitt",
     repo_branch: "main",
     repo_url_type: "http",
-    jenkins_git_creds_id: "bit_bucket-key",
+    jenkins_git_creds_id: "shared-lib",
     source_code_path: "",
      // Dependency Scanning
     dependency_check: false,
