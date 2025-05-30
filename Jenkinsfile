@@ -1,6 +1,6 @@
 @Library('ecom-cicid-shared-lib') _
 def cipipeline = new opstree.ci.templates.java_ci.java_ci()
-node('ec2-slave') {
+node {
   cipipeline.call([
   enable_jenkins_build_param_override: true,
     // WORKSPACE MANAGEMENT
