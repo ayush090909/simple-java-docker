@@ -82,7 +82,7 @@ node {
     jenkins_jira_url_env_name: "JIRA_URL",
     jenkins_jira_creds_id: "jira-ticket-update-credentials",
     fail_job_if_jira_operation_failed: true,
-    enable_jira: true,
+    enable_jira: false,
     enable_buildlogurl_in_jiracomment: true,
     // Trigger_pipeline
     enable_trigger_cd_pipeline: false,
