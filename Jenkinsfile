@@ -1,4 +1,4 @@
-@Library('cicid-shared-lib@ayush-minimalist') _
+@Library('cicid-shared-lib@dockle-integration') _
 def cipipeline = new opstree.ci.templates.java_ci.java_ci()
 node {
   cipipeline.call([
@@ -74,6 +74,10 @@ node {
     ecr_repo_name: "ecom-notification-consumer-service",
     ecr_region: "ap-south-1",
     account_id: "543339517346",
+    //dockle scanning
+    dockle_scan_check: 'true', // or 'false'
+    dockle_report_publish: 'true', // to publish dockle report
+
     // JIRA
     jenkins_jira_url_env_name: "JIRA_URL",
     jenkins_jira_creds_id: "jira-ticket-update-credentials",
