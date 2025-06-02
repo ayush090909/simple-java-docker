@@ -1,19 +1,11 @@
-# stable official Java runtime base image
-FROM openjdk:17-jdk-alpine
+# Use a cross-platform compatible JDK
+FROM eclipse-temurin:17-jdk
 
-# metadata
-LABEL maintainer="ayushek8@gmail.com"
-LABEL version="1.0"
-LABEL description="A simple Java application"
-
-# working directory
+# Set working directory
 WORKDIR /app
 
-# Copy source code into the container
-COPY src/Main.java /app/Main.java
+# Copy your app's jar or source files
+COPY . .
 
-# Compile the Java code
-RUN javac Main.java
-
-# Run the Java application when the container starts
-CMD ["java", "Main"]
+# Compile/run/build command as needed
+CMD ["java", "-version"]
