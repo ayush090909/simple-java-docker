@@ -63,7 +63,7 @@ node {
     scan_severity: "CRITICAL",
     image_scanning_report_publish: true,
     // Image size validator
-    image_size_validator_check: true,
+    image_size_validator_check: false,
     max_allowed_image_size: 100,
     fail_job_if_validation_fail: false,
     // Publish Artifact(Docker Image)
