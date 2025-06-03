@@ -52,7 +52,7 @@ node {
     // Build Dockerfile
     perform_build_dockerfile: true,
     image_name: "java-service",
-    dockerfile_location: "Dockerfile",
+    dockerfile_location: "/Dockerfile",
     dockerfile_context: "",
     codeartifact_dependency: false,
     codeartifact_domain: "ecomexpress",
