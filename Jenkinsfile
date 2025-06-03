@@ -81,6 +81,9 @@ node {
     // Hadolint Dockerfile scan
     hadolint_scan_check: 'true',
     hadolint_report_publish: 'true',
+    fail_job_on_hadolint_error: 'false',
+    dockerfile_context: '',
+    repo_dir: ''
 
     // JIRA
     jenkins_jira_url_env_name: "JIRA_URL",
