@@ -14,7 +14,10 @@ RUN echo "# Fake AWS Key (for TruffleHog testing)" >> /app/test_creds.txt && \
     echo "# Fake GitHub Token" >> /app/test_creds.txt && \
     echo "GH_TOKEN=ghp_AbCdEfGhIjKlMnOpQrStUvWxYz0123456789" >> /app/test_creds.txt && \
     echo "# Fake Slack Webhook" >> /app/test_creds.txt && \
-    echo "SLACK_WEBHOOK=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" >> /app/test_creds.txt
+    echo "SLACK_WEBHOOK=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" >> /app/test_creds.txt# Fake AWS Keys (TruffleHog will detect these)
+ENV AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+ENV AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+    
 
 # Copy real application files (use .dockerignore to exclude sensitive files)
 COPY . .
